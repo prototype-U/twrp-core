@@ -4,7 +4,7 @@ TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 COMMON_GLOBAL_CFLAGS += -DREFRESH_RATE=60 -DQCOM_HARDWARE
 # inherit from the proprietary version
--include vendor/samsung/core/BoardConfigVendor.mk
+-include vendor/samsung/arubaslim/BoardConfigVendor.mk
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -16,7 +16,7 @@ TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_CPU_VARIANT:= cortex-a5
 
-TARGET_BOOTLOADER_BOARD_NAME := core
+TARGET_BOOTLOADER_BOARD_NAME := arubaslim
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom loglevel=1 vmalloc=200M
 BOARD_KERNEL_BASE := 0x00200000
@@ -29,7 +29,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1363148800
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/samsung/core/kernel
+TARGET_PREBUILT_KERNEL := device/samsung/arubaslim/kernel
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 # UMS
@@ -37,10 +37,10 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/
 BOARD_UMS_LUNFILE := "/sys/devices/platform/msm_hsusb/gadget/lun%d/file"
 
 #recovery
-TARGET_RECOVERY_INITRC := device/samsung/core/recovery/init.twrp.rc
+TARGET_RECOVERY_INITRC := device/samsung/arubaslim/recovery/init.twrp.rc
 
 #twrp
-
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 BOARD_USE_CUSTOM_RECOVERY_FONT:= \"font_7x16.h\"
 DEVICE_RESOLUTION := 480x800
 TW_INTERNAL_STORAGE_PATH := "/external_sd"

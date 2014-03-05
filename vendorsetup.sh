@@ -1,1 +1,1 @@
-add_lunch_combo cm_core-userdebug
+add_lunch_combo cm_arubaslim-userdebug
