@@ -18,11 +18,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
 PRODUCT_COPY_FILES += \
-    device/samsung/core/recovery/init.twrp.rc:recovery/root/init.twrp.rc \
+    device/samsung/core/recovery/init.twrp.rc:recovery/root/init.rc \
     device/samsung/core/recovery/sbin/adbd:recovery/root/sbin/adbd \
     device/samsung/core/recovery/sbin/recovery:recovery/root/sbin/recovery \
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_core
-PRODUCT_DEVICE := core
+PRODUCT_NAME := cm_arubaslim
+PRODUCT_DEVICE := arubaslim

@@ -11,8 +11,9 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 $(call inherit-product, device/samsung/core/device_core.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := core
-PRODUCT_NAME := cm_core
-PRODUCT_BRAND := samsung
-PRODUCT_MODEL := core
-PRODUCT_MANUFACTURER := samsung
+PRODUCT_NAME := cm_arubaslim
+PRODUCT_DEVICE := arubaslim
+PRODUCT_BRAND := Samsung
+PRODUCT_MODEL := GT-I8262
+PRODUCT_MANUFACTURER := Samsung
+PRODUCT_CHARACTERISTICS := phone
