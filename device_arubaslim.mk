@@ -13,10 +13,12 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
+
 PRODUCT_COPY_FILES += \
      device/samsung/arubaslim/crypto/libsec_km.so:recovery/root/sbin/libsec_km.so \
      device/samsung/arubaslim/crypto/libsec_ecryptfs.so:recovery/root/sbin/libsec_ecryptfs.so \
      device/samsung/arubaslim/crypto/libkeyutils.so:recovery/root/sbin/libkeyutils.so \
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
