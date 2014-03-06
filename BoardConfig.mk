@@ -48,9 +48,9 @@ TW_INCLUDE_CRYPTO_SAMSUNG := true
 TW_CRYPTO_FS_TYPE := "ext4"
 TW_CRYPTO_REAL_BLKDEV := "/dev/block/mmcblk0p24"
 TW_CRYPTO_MNT_POINT := "/data"
-TW_CRYPTO_FS_OPTIONS := "noauto_da_alloc"
+TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,noauto_da_alloc,discard,journal_async_commit,errors=panic      wait,check,encryptable=footer"
 TW_CRYPTO_FS_FLAGS := "0x00000406"
-TW_CRYPTO_KEY_LOC := "/efs/metadata"
+TW_CRYPTO_KEY_LOC := "footer"
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 BOARD_USE_CUSTOM_RECOVERY_FONT:= \"font_7x16.h\"
 DEVICE_RESOLUTION := 480x800
